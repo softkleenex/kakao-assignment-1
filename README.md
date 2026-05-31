@@ -4,19 +4,13 @@
 
 ---
 
-## 📷 미리보기 (Preview)
-
-![Todo App Preview](./screenshot.png)
-
----
-
 ## 📅 과제 대시보드 (Assignment Dashboard)
 
-| 주차 | 주제 | 적용 기술 | 진행 상태 | 주요 링크 |
-| :--- | :--- | :--- | :---: | :--- |
-| **Week 1** | **Vanilla JS Todo** | HTML, CSS, JS, LocalStorage, Vite | 🟢 **완료 (제출 완료)** | [📁 코드 보기](./task1/) • [🌿 브랜치](https://github.com/softkleenex/kakao-assignment-1/tree/week-01-softkleenex) • [💬 제출 이슈](https://github.com/softkleenex/kakao-assignment-1/issues/1) |
-| **Week 2** | **React Refactoring** | React, CSS Modules, State Management | 🟡 *대기 중* | — |
-| **Week 3** | **Next.js Fullstack** | Next.js, Server Components, API | 🔴 *대기 중* | — |
+| 주차 | 주제 | 적용 기술 | 진행 상태 | 서비스 미리보기 (Preview) | 주요 링크 |
+| :--- | :--- | :--- | :---: | :---: | :--- |
+| **Week 1** | **Vanilla JS Todo** | HTML, CSS, JS, LocalStorage, Vite | 🟢 **완료** | <img src="./task1/screenshot.png" width="180" alt="Week 1" /> | [📁 코드 보기](./task1/) • [🌿 브랜치](https://github.com/softkleenex/kakao-assignment-1/tree/week-01-softkleenex) • [💬 제출 이슈](https://github.com/softkleenex/kakao-assignment-1/issues/1) |
+| **Week 2** | **React Refactoring** | React, CSS Modules, State Management | 🟡 *대기 중* | `준비 중 ⏳` | — |
+| **Week 3** | **Next.js Fullstack** | Next.js, Server Components, API | 🔴 *대기 중* | `준비 중 ⏳` | — |
 
 ---
 
