@@ -6,11 +6,11 @@
 
 ## 📅 과제 대시보드 (Assignment Dashboard)
 
-| 주차 | 주제 | 적용 기술 | 진행 상태 | 서비스 미리보기 (Preview) | 주요 링크 |
-| :--- | :--- | :--- | :---: | :---: | :--- |
-| **Week 1** | **Vanilla JS Todo** | HTML, CSS, JS, LocalStorage, Vite | 🟢 **완료** | <img src="./task1/screenshot.png" width="180" alt="Week 1" /> | [📁 코드 보기](./task1/) • [🌿 브랜치](https://github.com/softkleenex/kakao-assignment-1/tree/week-01-softkleenex) • [💬 제출 이슈](https://github.com/softkleenex/kakao-assignment-1/issues/1) |
-| **Week 2** | **React Refactoring** | React, CSS Modules, State Management | 🟡 *대기 중* | `준비 중 ⏳` | — |
-| **Week 3** | **Next.js Fullstack** | Next.js, Server Components, API | 🔴 *대기 중* | `준비 중 ⏳` | — |
+| 주차 | 주제 | 적용 기술 | 진행 상태 | 주요 링크 |
+| :--- | :--- | :--- | :---: | :--- |
+| **Week 1** | **Vanilla JS Todo** | HTML, CSS, JS, LocalStorage, Vite | 🟢 **완료** | [📁 코드 보기](./task1/) • [🌿 브랜치](https://github.com/softkleenex/kakao-assignment-1/tree/week-01-softkleenex) • [💬 제출 이슈](https://github.com/softkleenex/kakao-assignment-1/issues/1) |
+| **Week 2** | **React Refactoring** | React, CSS Modules, State Management | 🟡 *대기 중* | — |
+| **Week 3** | **Next.js Fullstack** | Next.js, Server Components, API | 🔴 *대기 중* | — |
 
 ---
 
@@ -67,3 +67,20 @@ npm run dev
 
 - **Developer**: softkleenex (isangjae)
 - **Goal**: 단순히 동작하는 코드를 넘어, 사용자 중심의 뛰어난 인터랙션과 유지보수가 용이한 아키텍처를 설계하는 프론트엔드 엔지니어로 성장하기
+
+---
+
+## 📷 주차별 과제 미리보기 (Weekly Previews)
+
+### 🌿 Week 1: Vanilla JS Todo
+![Week 1 Preview](./task1/screenshot.png)
+
+---
+
+### ⚛️ Week 2: React Refactoring
+*과제 진행 시 업로드 예정 (준비 중 ⏳)*
+
+---
+
+### ⚡ Week 3: Next.js Fullstack
+*과제 진행 시 업로드 예정 (준비 중 ⏳)*
