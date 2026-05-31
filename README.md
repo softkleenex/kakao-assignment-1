@@ -4,6 +4,12 @@
 
 ---
 
+## 📷 미리보기 (Preview)
+
+![Todo App Preview](./screenshot.png)
+
+---
+
 ## 📅 과제 대시보드 (Assignment Dashboard)
 
 | 주차 | 주제 | 적용 기술 | 진행 상태 | 주요 링크 |
