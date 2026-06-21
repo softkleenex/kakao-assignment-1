@@ -36,6 +36,7 @@ task3/
 ├── PLAN.md
 ├── REVIEW_REFLECTION.md
 ├── README.md
+├── TESTING.md
 ├── TROUBLESHOOTING.md
 ├── backend/
 │   ├── main.py
@@ -111,3 +112,6 @@ npm run dev
 - `npm audit --omit=dev` 취약점 0건
 - FastAPI HTTP CRUD 스모크 테스트 통과
 - Next API Route → FastAPI 프록시 스모크 테스트 통과
+- `pytest` 기반 백엔드 API 테스트 추가
+- Playwright 기반 프론트 E2E 테스트 추가
+- Chrome DevTools MCP로 실제 브라우저 화면과 전/후 스크린샷 검증

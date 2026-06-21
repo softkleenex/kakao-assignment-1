@@ -18,6 +18,8 @@ RuntimeError: The starlette.testclient module requires the httpx2 package to be 
 
 과제 실행에 꼭 필요한 런타임 의존성을 늘리지 않기 위해 `httpx2`를 추가하지 않았습니다. 대신 Uvicorn으로 실제 FastAPI 서버를 띄우고, HTTP 요청으로 생성, 조회, 수정, 삭제, 필터, 검색 흐름을 검증했습니다.
 
+이후 회고에 적은 API 테스트 자동화를 실제로 추가하면서 `requirements-dev.txt`를 별도로 만들고, 테스트 전용 의존성으로 `pytest`와 `httpx2`를 분리했습니다. 런타임 `requirements.txt`는 그대로 유지했습니다.
+
 ## 2. Next.js 16 생성기의 기본 import alias
 
 ### 상황
@@ -51,3 +53,17 @@ RuntimeError: The starlette.testclient module requires the httpx2 package to be 
 ### 해결
 
 강제 downgrade 대신 `package.json`의 `overrides`로 `postcss`를 안전한 patch 버전(`^8.5.10`) 이상으로 고정했습니다. 이후 `npm audit --omit=dev`, `npm run lint`, `npm run build`를 다시 실행해 모두 통과했습니다.
+
+## 5. E2E 테스트에서 8000 포트 충돌
+
+### 상황
+
+Playwright E2E 테스트가 FastAPI 서버 대신 다른 로컬 프로세스의 응답을 받아 실패했습니다.
+
+### 원인
+
+로컬 환경에서 `8000` 포트를 `code-tunnel` 프로세스가 이미 사용하고 있었습니다. Playwright의 `reuseExistingServer`가 이 응답을 살아있는 백엔드로 오인했습니다.
+
+### 해결
+
+E2E 전용 FastAPI 포트를 `18080`으로 분리하고, Next.js dev 서버 실행 시 `BACKEND_URL=http://127.0.0.1:18080`을 주입했습니다. 이후 `PLAYWRIGHT_USE_SYSTEM_CHROME=1 npm run test:e2e`가 통과했습니다.

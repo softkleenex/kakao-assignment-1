@@ -59,7 +59,9 @@
 2. FastAPI TestClient로 생성, 조회, 수정, 삭제, 필터, 검색 테스트
 3. 프론트엔드 ESLint 실행
 4. 프론트엔드 production build 실행
-5. 제출 전 README와 Issue 초안 작성
+5. 백엔드 pytest API 테스트 실행
+6. 프론트엔드 E2E 테스트 실행
+7. 제출 전 README와 Issue 초안 작성
 
 ## 1·2차 리뷰 반영 기준
 

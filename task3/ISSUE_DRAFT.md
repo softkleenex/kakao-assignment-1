@@ -20,6 +20,7 @@
   - `task3/frontend/app/api/todos/[todoId]/route.ts`
   - `task3/backend/main.py`
   - `task3/PLAN.md`
+  - `task3/TESTING.md`
   - `task3/TROUBLESHOOTING.md`
 
 ---
@@ -36,6 +37,9 @@
 - [x] Server Action 기반 생성/수정 처리
 - [x] 환경변수 분리
 - [x] `loading.tsx`, `error.tsx` 구현
+- [x] 백엔드 API 테스트 추가
+- [x] 프론트 E2E 테스트 추가
+- [x] GitHub Actions CI 추가
 
 ---
 
@@ -67,6 +71,17 @@
 
 ---
 
+## 검증 결과
+
+- [x] `task3/backend/.venv/bin/pytest` 통과: 2 passed
+- [x] `npm run lint` 통과
+- [x] `npm run build` 통과
+- [x] `npm audit --omit=dev` 취약점 0건
+- [x] `PLAYWRIGHT_USE_SYSTEM_CHROME=1 npm run test:e2e` 통과: 1 passed
+- [x] Chrome DevTools MCP로 task2/task3 전후 화면 확인 및 스크린샷 저장
+
+---
+
 ## AI 활용 내역
 
 ### 전체 구조 계획
@@ -84,8 +99,8 @@
 ### 검증과 트러블슈팅
 
 - AI 활용 내용 : 백엔드와 프론트엔드 검증 절차를 순서대로 실행했습니다.
-- 직접 수정한 부분 : `TestClient` 관련 이슈를 `task3/TROUBLESHOOTING.md`에 기록하고, 실제 HTTP 스모크 테스트로 대체했습니다.
-- 수정 이유 : 테스트를 위해 불필요한 런타임 의존성을 늘리는 것보다, 실제 서버 요청 흐름을 확인하는 편이 과제 목적에 더 적합하다고 판단했습니다.
+- 직접 수정한 부분 : `TestClient` 관련 이슈를 `task3/TROUBLESHOOTING.md`에 기록했고, 이후 테스트 전용 의존성을 `requirements-dev.txt`로 분리해 pytest API 테스트를 추가했습니다. 화면 검증은 Chrome DevTools MCP로 직접 확인하고, 반복 가능한 E2E 검증은 Playwright 테스트 파일로 남겼습니다.
+- 수정 이유 : 제출 문서에만 회고를 남기기보다, 실제로 재실행 가능한 테스트와 수동 QA 기록을 함께 남기기 위해서입니다.
 
 ---
 
@@ -102,5 +117,5 @@
 ## 과제 회고
 
 - 잘한 점 : 구현 전에 계획 문서를 먼저 작성하고, 검증 결과와 트러블슈팅을 남겼습니다.
-- 아쉬운 점 : Playwright 같은 브라우저 자동화 테스트까지는 추가하지 못했습니다.
-- 다음에 시도해볼 것 : API 테스트를 별도 테스트 파일로 정리하고, UI E2E 테스트를 추가해보고 싶습니다.
+- 개선한 점 : 회고에만 남겼던 API 테스트와 UI E2E 테스트를 실제 테스트 파일과 CI로 추가했습니다. Chrome DevTools MCP로 실제 화면도 확인했습니다.
+- 다음에 시도해볼 것 : 배포까지 진행한다면 FastAPI 백엔드와 SQLite 대체 DB를 별도 호스팅 구조로 분리해보고 싶습니다.
