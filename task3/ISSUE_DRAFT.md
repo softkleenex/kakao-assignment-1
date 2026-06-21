@@ -47,6 +47,18 @@
 
 ---
 
+## 전/후 서비스 화면
+
+### 2차 React/localStorage 버전
+
+![2차 React Todo 화면](https://github.com/softkleenex/kakao-assignment-1/blob/week-03-softkleenex/task3/screenshots/before-task2-react.png?raw=true)
+
+### 3차 Next.js/FastAPI 버전
+
+![3차 Next.js FastAPI Todo 화면](https://github.com/softkleenex/kakao-assignment-1/blob/week-03-softkleenex/task3/screenshots/after-task3-next-fastapi.png?raw=true)
+
+---
+
 ## AI 활용 내역
 
 ### 전체 구조 계획
