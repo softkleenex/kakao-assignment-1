@@ -79,6 +79,7 @@
 - [x] `npm audit --omit=dev` 취약점 0건
 - [x] `PLAYWRIGHT_USE_SYSTEM_CHROME=1 npm run test:e2e` 통과: 1 passed
 - [x] Chrome DevTools MCP로 task2/task3 전후 화면 확인 및 스크린샷 저장
+- [x] GitHub Actions Task 3 CI 통과: https://github.com/softkleenex/kakao-assignment-1/actions/runs/27900991701
 
 ---
 
