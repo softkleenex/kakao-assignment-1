@@ -1,6 +1,6 @@
 # ⚡ Kakao Tech Campus — Todo Web App Refactoring Journey
 
-> **Vanilla JS ➔ React ➔ Next.js**로 점진적으로 고도화되는 3주간의 생산성 Todo 애플리케이션 개발 여정입니다.
+> **Vanilla JS ➔ React ➔ Next.js**로 점진적으로 고도화되는 Todo 애플리케이션 개발 여정입니다.
 
 ---
 
