@@ -1,0 +1,1 @@
+실제 사용해보며 발견한 "날짜 이동 시 편집 상자/에러 메시지 잔존" 버그를 resetTemporaryStates 함수로 추상화하신 점, setSelectionRange로 커서 위치까지 챙긴 UX 디테일이 정말 좋아요. getMondayOfDate 일요일 엣지 케이스, try-catch 방어도 굉장히 좋습니다

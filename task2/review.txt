@@ -1,0 +1,4 @@
+다크모드에서 prefers-color-scheme까지 체크해서 시스템 설정 따라가게 한 거랑, useRef로 포커스 잡을 때 커서를 텍스트 끝으로 보내는 디테일 좋습니다.
+
+회고엔 "컴포넌트 분리 잘했다" 적으셨는데 사실 App.jsx에 state랑 핸들러가 다 몰려있고 date 함수도 WeeklyCalendar랑 중복돼있어요. Zustand 가시기 전에 utils 폴더로 함수 빼는 것부터 가볍게 해보시면 좋을거 같습니다.
+
