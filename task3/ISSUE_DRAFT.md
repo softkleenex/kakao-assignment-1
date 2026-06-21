@@ -12,7 +12,7 @@
 
 ## 과제 위치
 
-- 브랜치명 : `week-03-softkleenex`
+- 브랜치명 : `week-05-softkleenex`
 - 주요 파일 :
   - `task3/frontend/app/todos/page.tsx`
   - `task3/frontend/app/actions.ts`
@@ -51,11 +51,19 @@
 
 ### 2차 React/localStorage 버전
 
-![2차 React Todo 화면](https://github.com/softkleenex/kakao-assignment-1/blob/week-03-softkleenex/task3/screenshots/before-task2-react.png?raw=true)
+![2차 React Todo 화면](https://github.com/softkleenex/kakao-assignment-1/blob/week-05-softkleenex/task3/screenshots/before-task2-react.png?raw=true)
 
 ### 3차 Next.js/FastAPI 버전
 
-![3차 Next.js FastAPI Todo 화면](https://github.com/softkleenex/kakao-assignment-1/blob/week-03-softkleenex/task3/screenshots/after-task3-next-fastapi.png?raw=true)
+![3차 Next.js FastAPI Todo 화면](https://github.com/softkleenex/kakao-assignment-1/blob/week-05-softkleenex/task3/screenshots/after-task3-next-fastapi.png?raw=true)
+
+---
+
+## 1·2차 리뷰 반영
+
+- 1차 리뷰에서 좋게 평가된 날짜 이동 시 임시 상태 초기화, 일요일 엣지 케이스 처리, UX 디테일을 유지하려고 했습니다.
+- 2차 리뷰에서 개선점으로 나온 `App.jsx` 집중 구조와 날짜 함수 중복을 줄이기 위해 3차에서는 날짜 계산을 `app/lib/date.ts`, URL 상태 생성을 `app/lib/url.ts`, API 호출을 `app/lib/api.ts`로 분리했습니다.
+- 상태도 클라이언트 `useState`에만 두지 않고 URL 파라미터와 서버 조회 흐름으로 옮겨 새로고침/공유 가능한 구조로 바꿨습니다.
 
 ---
 

@@ -10,7 +10,7 @@
 | :--- | :--- | :--- | :---: | :--- |
 | **Week 1** | **Vanilla JS Todo** | HTML, CSS, JS, LocalStorage, Vite | 🟢 **완료** | [📁 코드 보기](./task1/) • [🌿 브랜치](https://github.com/softkleenex/kakao-assignment-1/tree/week-01-softkleenex) • [💬 제출 이슈](https://github.com/softkleenex/kakao-assignment-1/issues/1) |
 | **Week 2** | **React Refactoring** | React, Vite, Tailwind CSS, LocalStorage | 🟢 **완료** | [📁 코드 보기](./task2/) |
-| **Week 3** | **Next.js Fullstack** | Next.js, FastAPI, SQLite, API Route | 🟢 **구현 완료** | [📁 코드 보기](./task3/) • [📝 계획](./task3/PLAN.md) |
+| **Assignment 3 / Week 5** | **Next.js Fullstack** | Next.js, FastAPI, SQLite, API Route | 🟢 **구현 완료** | [📁 코드 보기](./task3/) • [🌿 브랜치](https://github.com/softkleenex/kakao-assignment-1/tree/week-05-softkleenex) • [💬 제출 이슈](https://github.com/softkleenex/kakao-assignment-1/issues/5) |
 
 ---
 
@@ -37,8 +37,9 @@ kakao-assignment-1/
 ├── README.md                # 전체 리포지토리 대시보드 (현재 파일)
 ├── task1/                   # [Week 1] Vanilla JS Todo 앱
 ├── task2/                   # [Week 2] React Todo 앱
-└── task3/                   # [Week 3] Next.js + FastAPI Todo 앱
+└── task3/                   # [Assignment 3 / Week 5] Next.js + FastAPI Todo 앱
     ├── PLAN.md              # 3차 과제 구현 계획
+    ├── REVIEW_REFLECTION.md # 1·2차 리뷰 반영 정리
     ├── TROUBLESHOOTING.md   # 구현 중 문제와 해결 기록
     ├── backend/             # FastAPI + SQLite
     └── frontend/            # Next.js App Router
@@ -101,7 +102,7 @@ uvicorn main:app --reload
 
 ---
 
-### ⚡ Week 3: Next.js Fullstack
-[코드 보기](./task3/) · [계획 문서](./task3/PLAN.md) · [트러블슈팅](./task3/TROUBLESHOOTING.md)
+### ⚡ Assignment 3 / Week 5: Next.js Fullstack
+[코드 보기](./task3/) · [브랜치](https://github.com/softkleenex/kakao-assignment-1/tree/week-05-softkleenex) · [제출 이슈](https://github.com/softkleenex/kakao-assignment-1/issues/5) · [계획 문서](./task3/PLAN.md) · [트러블슈팅](./task3/TROUBLESHOOTING.md)
 
 ![Week 3 Next.js Preview](./task3/screenshots/after-task3-next-fastapi.png)

@@ -34,6 +34,7 @@
 ```text
 task3/
 ├── PLAN.md
+├── REVIEW_REFLECTION.md
 ├── README.md
 ├── TROUBLESHOOTING.md
 ├── backend/
@@ -101,6 +102,7 @@ npm run dev
 - `useState`에만 있던 필터 상태를 URL 파라미터로 이동했습니다.
 - 필터와 검색은 브라우저 배열 필터링이 아니라 FastAPI 쿼리에서 처리합니다.
 - 수정은 인라인 입력 대신 `/todos/[todoId]` 페이지에서 처리합니다.
+- 2차 리뷰에서 지적된 날짜 함수 중복과 App 단일 집중 구조를 줄이기 위해 날짜, URL, API 로직을 `app/lib/`로 분리했습니다.
 
 ## 검증 결과
 

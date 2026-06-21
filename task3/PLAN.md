@@ -60,3 +60,10 @@
 3. 프론트엔드 ESLint 실행
 4. 프론트엔드 production build 실행
 5. 제출 전 README와 Issue 초안 작성
+
+## 1·2차 리뷰 반영 기준
+
+- 1차 리뷰에서 좋게 평가된 날짜 이동 시 임시 상태 초기화, 일요일 엣지 케이스 처리, UX 디테일을 유지한다.
+- 2차 리뷰에서 개선점으로 나온 날짜 유틸 중복과 App 단일 집중 구조를 줄인다.
+- 3차에서는 날짜 계산을 `app/lib/date.ts`, URL 상태 생성을 `app/lib/url.ts`, API 호출을 `app/lib/api.ts`로 분리한다.
+- 화면 상호작용은 필요한 컴포넌트에만 Client Component로 제한하고, 목록 조회와 URL 상태 해석은 Server Component에서 처리한다.
