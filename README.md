@@ -9,8 +9,8 @@
 | 주차 | 주제 | 적용 기술 | 진행 상태 | 주요 링크 |
 | :--- | :--- | :--- | :---: | :--- |
 | **Week 1** | **Vanilla JS Todo** | HTML, CSS, JS, LocalStorage, Vite | 🟢 **완료** | [📁 코드 보기](./task1/) • [🌿 브랜치](https://github.com/softkleenex/kakao-assignment-1/tree/week-01-softkleenex) • [💬 제출 이슈](https://github.com/softkleenex/kakao-assignment-1/issues/1) |
-| **Week 2** | **React Refactoring** | React, CSS Modules, State Management | 🟡 *대기 중* | — |
-| **Week 3** | **Next.js Fullstack** | Next.js, Server Components, API | 🔴 *대기 중* | — |
+| **Week 2** | **React Refactoring** | React, Vite, Tailwind CSS, LocalStorage | 🟢 **완료** | [📁 코드 보기](./task2/) |
+| **Week 3** | **Next.js Fullstack** | Next.js, FastAPI, SQLite, API Route | 🟢 **구현 완료** | [📁 코드 보기](./task3/) • [📝 계획](./task3/PLAN.md) |
 
 ---
 
@@ -33,33 +33,50 @@ graph LR
 ```markdown
 kakao-assignment-1/
 ├── .gitignore               # 프로젝트 전역 Git 제외 파일 설정
+├── AGENTS.md                # AI 협업 및 과제 작업 기준
 ├── README.md                # 전체 리포지토리 대시보드 (현재 파일)
-└── task1/                   # [Week 1] Vanilla JS Todo 앱
-    ├── index.html           # 앱 레이아웃 및 뼈대 구조
-    ├── style.css            # 미니멀 보랏빛 테마 CSS 스타일시트
-    ├── app.js               # 일간/주간 뷰 및 CRUD 비즈니스 로직
-    ├── package.json         # Vite 빌드 도구 및 스크립트 정의
-    └── .gitignore           # task1 전용 빌드 파일 제외 설정
+├── task1/                   # [Week 1] Vanilla JS Todo 앱
+├── task2/                   # [Week 2] React Todo 앱
+└── task3/                   # [Week 3] Next.js + FastAPI Todo 앱
+    ├── PLAN.md              # 3차 과제 구현 계획
+    ├── TROUBLESHOOTING.md   # 구현 중 문제와 해결 기록
+    ├── backend/             # FastAPI + SQLite
+    └── frontend/            # Next.js App Router
 ```
 
 ---
 
 ## 🛠️ 실행 및 개발 방법 (Getting Started)
 
-각 주차별 과제는 독립된 서브디렉토리 내에서 Vite 빌드 환경으로 구성되어 있습니다.
+각 주차별 과제는 독립된 서브디렉토리로 구성되어 있습니다. 1차와 2차는 프론트엔드 중심이고, 3차는 `frontend/`와 `backend/`가 분리된 풀스택 구조입니다.
 
 ### 1. 저장소 클론 및 폴더 이동
 ```bash
 git clone https://github.com/softkleenex/kakao-assignment-1.git
-cd kakao-assignment-1/task1  # 실행하려는 주차 폴더로 이동
+cd kakao-assignment-1/task3  # 실행하려는 주차 폴더로 이동
 ```
 
 ### 2. 패키지 설치 및 로컬 서버 실행
+
+3차 과제는 프론트엔드와 백엔드를 각각 별도 터미널에서 실행합니다.
 ```bash
+# 3차 프론트엔드
+cd frontend
 npm install
+cp .env.example .env.local
 npm run dev
 ```
-로컬 서버가 실행되면 브라우저에서 `http://localhost:5173`으로 접속하여 결과를 확인하실 수 있습니다.
+
+```bash
+# 3차 백엔드
+cd ../backend
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env.local
+uvicorn main:app --reload
+```
+3차 프론트엔드는 `http://localhost:3000/todos`, 백엔드는 `http://localhost:8000/docs`에서 확인할 수 있습니다.
 
 ---
 
@@ -78,9 +95,13 @@ npm run dev
 ---
 
 ### ⚛️ Week 2: React Refactoring
-*과제 진행 시 업로드 예정 (준비 중 ⏳)*
+[코드 보기](./task2/)
+
+![Week 2 React Preview](./task3/screenshots/before-task2-react.png)
 
 ---
 
 ### ⚡ Week 3: Next.js Fullstack
-*과제 진행 시 업로드 예정 (준비 중 ⏳)*
+[코드 보기](./task3/) · [계획 문서](./task3/PLAN.md) · [트러블슈팅](./task3/TROUBLESHOOTING.md)
+
+![Week 3 Next.js Preview](./task3/screenshots/after-task3-next-fastapi.png)
